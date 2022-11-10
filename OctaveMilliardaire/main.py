@@ -83,7 +83,7 @@ def deal_confirmation(TOK, CST, DEAL_REF):
         except Exception as e:
             print(e)
             print(f"returning other id :{t1}")
-            return t1
+            return -1
        
     else:
         print("error detected status=" + str(res.status))
