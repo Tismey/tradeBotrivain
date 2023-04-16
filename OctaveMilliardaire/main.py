@@ -11,14 +11,14 @@ socket.getaddrinfo('localhost', 8080)
 
 CAPITAL_ADDR = "demo-api-capital.backend-capital.com"
 ORG_EMAIL = "@gmail.com"
-FROM_EMAIL = "tradingbotrivain@outlook.fr"
+FROM_EMAIL = "<EMAIL WHERE YOU GETT INSTRUCTION>"
 print(FROM_EMAIL)
-MDP = "M4YDa77ZMn3cF-w"
+MDP = "PASSWORD"
 OPEN_POSITION = False
 ORDER_TYPE = -1
 DEAL_ID = -1
 DEAL_REF = 0
-SMTP_SERVER = "imap.outlook.com"
+SMTP_SERVER = "imap.outlook.com" # change depending on your email provider
 SMTP_PORT = 1143
 
 
@@ -175,11 +175,11 @@ def sell_position(Token, CST):
 def start_session():
     conn = http.client.HTTPSConnection(CAPITAL_ADDR)
     payload = json.dumps({
-        "identifier": "octrivain@gmail.com",
-        "password": "Octave2003@"
+        "identifier": "<YOUR CAPITAL.COM USERNAME>",
+        "password":"<YOUR PASSWORD>"
     })
     headers = {
-        'X-CAP-API-KEY': 'Bq3qecmYv5lUio8Y',
+        'X-CAP-API-KEY': '<API-KEY>',
         'Content-Type': 'application/json'
     }
     print(payload)
